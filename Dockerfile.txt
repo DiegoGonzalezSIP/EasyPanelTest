@@ -6,8 +6,9 @@ RUN apt-get update && apt-get install -y curl sudo
 # Instalar EasyPanel
 RUN curl -sSL https://get.easypanel.io | bash
 
-# Exponer puerto 3000
-EXPOSE 3000
+# Exponer puerto 8080
+EXPOSE 8080
 
 # Ejecutar EasyPanel con la variable de entorno PORT (si es que lo soporta)
 CMD ["/usr/local/bin/easypanel"]
+
